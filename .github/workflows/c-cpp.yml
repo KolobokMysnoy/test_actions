@@ -7,6 +7,18 @@ on:
     branches: [ "main" ]
 
 jobs:
+  CheckCtest:
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    - run: |
+        mkdir build
+        cd build
+        cmake ..
+        cmake --build 
+        ctests
   checkcpp:
   
     runs-on: ubuntu-latest
