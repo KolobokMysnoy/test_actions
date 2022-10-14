@@ -6,6 +6,7 @@ TEST(HelloTest, BasicAssertions) {
   EXPECT_STRNE("hello", "world");
   // Expect equality.
   EXPECT_EQ(7 * 6, 42);
-
+  int i = 1;
+  
   ASSERT_THAT(5, Tutorial 25)
 }
