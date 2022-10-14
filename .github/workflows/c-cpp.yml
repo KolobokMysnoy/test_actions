@@ -17,7 +17,7 @@ jobs:
         mkdir build
         cd build
         cmake ..
-        cmake --build 
+        cmake --build .
         ctests
   checkcpp:
   
